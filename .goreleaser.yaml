@@ -10,9 +10,7 @@ version: 1
 
 before:
   hooks:
-    # You may remove this if you don't use go modules.
     - go mod tidy
-    # you may remove this if you don't need go generate
     - go generate ./...
 
 builds:
@@ -36,6 +34,13 @@ builds:
         {{- if eq .Os "windows" }}
           {{- if eq .Arch "amd64" }}CC=x86_64-w64-mingw32-gcc{{- end }}
         {{- end }}
+
+release:
+  prerelease: auto
+  github:
+    owner: gjyotin305
+    name: CSL2090_PCS2_CourseProject_ollama
+  name_template: "{{.ProjectName}}-v{{.Version}}"
 
 archives:
   - format: tar.gz
