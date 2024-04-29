@@ -53,6 +53,10 @@ archives:
       {{- else }}{{ .Arch }}{{ end }}
       {{- if .Arm }}v{{ .Arm }}{{ end }}
     # use zip for windows archives
+    files:
+      - LICENSE
+      - README.md 
+      - install.sh
     format_overrides:
       - goos: windows
         format: zip
