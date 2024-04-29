@@ -12,7 +12,6 @@ readmeDir="/usr/share/doc/jpt"
 licenseDir="/usr/share/licenses/jpt"
 
 # Create installation directories if they don't exist
-mkdir -p "$configInstallDir"
 mkdir -p "$readmeDir"
 mkdir -p "$licenseDir"
 
@@ -21,5 +20,9 @@ mv "$binDir/jpt" "$installDir"
 mv "README.md" "$readmeDir"
 mv "LICENSE" "$licenseDir"
 
+
 echo "Installation of jpt completed successfully!"
 
+rm -rf "$binDir"
+
+echo "Clean up Completed"
