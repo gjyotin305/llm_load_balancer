@@ -60,13 +60,15 @@ func StreamResponse(query string, postUrl string, model string) {
 // setserverCmd represents the setserver command
 var setserverCmd = &cobra.Command{
 	Use:   "setserver",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
+	Short: "This is to enter the cli chat window with the local hosted llm",
+	Long: `This tool is to give the command in the following format 
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Example:
+
+	jpt setserver <host>:<port> <model>
+
+	Please follow the following format to enter the chat window
+	`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("setserver called")
 		arg_url := args[0]
