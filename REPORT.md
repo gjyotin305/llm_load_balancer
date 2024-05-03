@@ -5,6 +5,8 @@
 
 # Local LLM hosting with load balancing
 
+[Github Link](https://github.com/gjyotin305/llm_load_balancer)
+
 ## Problem Statement:
 
 - Creating a scalable local hosting environment for a large-scale application,
