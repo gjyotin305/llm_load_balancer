@@ -36,20 +36,17 @@ infrastructure for serving user demands effectively
 
 </center>
 </div>
-<br>
-<br>
-<br>
 
 ## jpt "the CLI tool"
 
-Jpt is our cli tool written in go, this is so that the
+- Jpt is our cli tool written in go, this is so that the
 users can connect to the hosted local llms in
 their cli for usage like normal qa, coding doubts,
 debugging, etc.
 
 
 
-Jpt helps in connecting the hosted local llms on
+- Jpt helps in connecting the hosted local llms on
 a network to multiple users
 
 ## Concepts used
