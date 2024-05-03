@@ -10,6 +10,15 @@ tar zxvf CSL2090_PCS2_CourseProject_ollama_Linux_x86_64.tar.gz
 sudo sh install.sh
 ```
 
+## Demo
+<div>
+<center>
+
+![Demo](courseproj.gif)
+
+</center>
+</div>
+
 ## Instructions to use CLI tool
 
 ```bash
